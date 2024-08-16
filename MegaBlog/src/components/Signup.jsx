@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
-import authService from '../appwrite/auth'
+import authService from '../appwrite/auth.js'
 import {Link ,useNavigate} from 'react-router-dom'
-import {login} from '../store/authSlice'
-import Button from './Button'
-import Input from './Input'
-import Logo from './Logo'
+import {login} from '../store/authSlice.js'
+import {Button, Input, Logo} from './index.js'
 import {useDispatch} from 'react-redux'
 import {useForm} from 'react-hook-form'
 
-const SignupFirst = ()=> {
+function Signup() {
     const navigate = useNavigate()
     const [error, setError] = useState("")
     const dispatch = useDispatch()
@@ -87,4 +85,4 @@ const SignupFirst = ()=> {
   )
 }
 
-export default SignupFirst
+export default Signup
