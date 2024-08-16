@@ -77,7 +77,7 @@ export class Service{
             )
         } catch (error) {
             console.log("Appwrite serive :: getPost :: error", error);
-            return false
+            return false;
         }
     }
 

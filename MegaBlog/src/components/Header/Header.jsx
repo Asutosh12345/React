@@ -1,10 +1,9 @@
-import React, { act } from 'react'
+import React from 'react'
 import LogoutBtn from './LogoutBtn'
 import Logo from '../Logo'
 import Container from '../container/Container'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
-import { logout } from '../../store/authSlice'
 import { useNavigate } from 'react-router-dom'
 
 function Header() {
